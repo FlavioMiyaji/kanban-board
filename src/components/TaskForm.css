@@ -1,0 +1,17 @@
+.task {
+  padding: 0.8em;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+label input {
+  flex: 1;
+  border-radius: 0.2em;
+  border: solid 1px;
+  padding: 0.4em;
+}
