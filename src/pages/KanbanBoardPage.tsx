@@ -9,7 +9,7 @@ import './KanbanBoardPage.css';
 const KanbanBoardPage: React.FC = (): JSX.Element => {
   return (
     <div className="kanban-board-container">
-      <TaskForm />
+      <TaskForm handleAddTask={() => { }} />
       <KanbanBoard />
     </div>
   );
