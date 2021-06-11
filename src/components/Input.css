@@ -1,0 +1,35 @@
+.input-container {
+  display: flex;
+  align-items: center;
+
+  background: #fff;
+  border: solid 1px #020202;
+  border-radius: 0.2rem;
+  padding: 0.6em;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #b7b7cc;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+.input-container input::placeholder {
+  color: #b7b7cc;
+}
+
+.filled input {
+  color: #020202;
+}
+
+.focused input {
+  color: #020202;
+  border-color: #020202;
+}

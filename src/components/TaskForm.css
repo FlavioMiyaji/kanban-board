@@ -1,17 +1,43 @@
 .task {
   padding: 0.8em;
+  background-color: #dedede;
+  border-radius: 0.5em;
 }
 
 .task label {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
+  display: grid;
+  grid-gap: 0.5em;
   margin-bottom: 0.5em;
 }
-
-label input {
-  flex: 1;
+/* 
+.task input {
   border-radius: 0.2em;
   border: solid 1px;
-  padding: 0.4em;
+  padding: 0.6em;
+  width: -webkit-fill-available;
+  background-color: #fefefe;
+} */
+
+.task select {
+  border-radius: 0.2em;
+  border: solid 1px;
+  padding: 0.6em;
+  width: -webkit-fill-available;
+  background-color: #fefefe;
+}
+
+.task footer {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.task button {
+  padding: 0.6em 1.2em;
+}
+
+@media(min-width:50rem) {
+  .task label {
+    grid-template-columns: 2fr 10fr;
+    align-items: center;
+  }
 }
