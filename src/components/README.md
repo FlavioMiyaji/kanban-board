@@ -2,8 +2,8 @@
 
 # Input
 
-# Kamban Board
+# Kanban Board
 
-# Kamban Columns
+# Kanban Columns
 
 # Task Form

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  KambanColumn,
+  KanbanColumn,
 } from '.';
 
 import './KanbanBoard.css';
@@ -22,7 +22,7 @@ const KanbanBoard: React.FC<IKanbanBoardProps> = ({ stages }): JSX.Element => {
   return (
     <div className="kanban-board">
       {stages.map(stage => (
-        <KambanColumn stage={stage} />
+        <KanbanColumn stage={stage} />
       ))}
     </div>
   );

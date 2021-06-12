@@ -1,9 +1,11 @@
 import KanbanBoard from './KanbanBoard';
-import KambanColumn from './KambanColumn';
+import KanbanColumn from './KanbanColumn';
 import TaskCreate from './TaskCreate';
+import KanbanCard from './KanbanCard';
 
 export {
   KanbanBoard,
-  KambanColumn,
+  KanbanColumn,
   TaskCreate,
+  KanbanCard,
 };

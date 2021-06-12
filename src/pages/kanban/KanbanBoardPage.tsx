@@ -20,7 +20,28 @@ interface ITask {
 
 const KanbanBoardPage: React.FC = (): JSX.Element => {
   const [stages, setStages] = useState<IStage[]>([{
-    name: 'Teste',
+    name: 'TODO',
+    tasks: []
+  }, {
+    name: 'Analyzing',
+    tasks: []
+  }, {
+    name: 'Analyzed',
+    tasks: []
+  }, {
+    name: 'Developing',
+    tasks: []
+  }, {
+    name: 'Developed',
+    tasks: []
+  }, {
+    name: 'Developed',
+    tasks: []
+  }, {
+    name: 'Testing',
+    tasks: []
+  }, {
+    name: 'Done',
     tasks: []
   }]);
   const handleAddTask = useCallback((summary: string) => {
