@@ -2,7 +2,7 @@ import React, {
   useRef,
   useCallback,
 } from 'react';
-import { Input } from './';
+import { Input } from '.';
 import { Form as Unform } from '@unform/web';
 import { FormHandles } from '@unform/core';
 

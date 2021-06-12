@@ -5,7 +5,7 @@ import {
   Route,
 } from 'react-router-dom';
 import './App.css';
-import KanbanBoard from './pages/KanbanBoardPage';
+import KanbanBoard from './pages/kanban/KanbanBoardPage';
 
 function App() {
   return (
