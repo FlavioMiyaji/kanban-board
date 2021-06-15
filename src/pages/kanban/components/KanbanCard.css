@@ -1,5 +1,64 @@
 .kanban-card {
-  flex: 1 1 100%;
-  border-radius: 0.4rem;
-  border: solid 1px #010101;
+  position: relative;
+  border-radius: 0.2rem;
+  border: solid 2px #fefefe;
+  padding: 0.6em 2.4em;
+  background-color: #fefefe;
+  overflow: hidden;
+  min-width: 220px;
+}
+
+.kanban-card .title {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.kanban-card .type {
+  background-color: blueviolet;
+  border-radius: 0.2em;
+  padding: 0.2em;
+  color: #fefefe;
+}
+
+.kanban-card .icon {
+  display: none;
+}
+
+.kanban-card .icon,
+.kanban-card .assigned-to {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
+
+.kanban-card:hover .icon {
+  display: block;
+  background-color: rgba(10, 10, 10, 0.2);
+}
+
+.kanban-card .left {
+  inset: auto auto 0.2em 0.2em;
+}
+
+.kanban-card .right {
+  inset: auto 0.2em 0.2em auto;
+}
+
+.kanban-card .edit {
+  inset: 0.2em 0.2em auto auto;
+}
+
+.kanban-card .assigned-to {
+  inset: 0.4em auto auto 0.2em;
+  background-color: blueviolet;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  overflow: hidden;
 }

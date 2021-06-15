@@ -20,10 +20,14 @@ const KanbanColumn: React.FC<IKanbanColumnProps> = ({ stage }): JSX.Element => {
   const { name, tasks } = stage;
   return (
     <div className="kanban-column">
-      {name}
-      {tasks.map(task => (
-        <KanbanCard task={task} />
-      ))}
+      <h1>
+        {name}
+      </h1>
+      <div className="items">
+        {tasks.map(task => (
+          <KanbanCard task={task} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -7,3 +7,8 @@
   /* max-width: 50rem;
   min-height: 24rem; */
 }
+
+.kanban-board-container .logo {
+  width: 5rem;
+  height: 5rem;
+}

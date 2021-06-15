@@ -6,6 +6,7 @@ import {
   TaskCreate,
   KanbanBoard,
 } from './components';
+import logo from '../../assets/logo.svg'
 
 import './KanbanBoardPage.css';
 
@@ -18,16 +19,18 @@ interface ITask {
   summary: string;
 }
 
+const text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat qui distinctio culpa inventore. Vero ipsum quas nesciunt. Non, facilis ab.';
+
 const KanbanBoardPage: React.FC = (): JSX.Element => {
   const [stages, setStages] = useState<IStage[]>([{
     name: 'TODO',
-    tasks: []
+    tasks: [{ summary: text }, { summary: text }, { summary: text }]
   }, {
     name: 'Analyzing',
-    tasks: []
+    tasks: [{ summary: text }]
   }, {
     name: 'Analyzed',
-    tasks: []
+    tasks: [{ summary: text }]
   }, {
     name: 'Developing',
     tasks: []
@@ -57,7 +60,7 @@ const KanbanBoardPage: React.FC = (): JSX.Element => {
   return (
     <div className="kanban-board-container">
       <header>
-        <div className="logo">LOGO HERE</div>
+        <img className="logo" src={logo} alt=""/>
         <div className="project">Project name HERE</div>
       </header>
       <TaskCreate handleAddTask={handleAddTask} />

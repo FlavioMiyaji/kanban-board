@@ -1,3 +1,21 @@
 .kanban-column {
   flex: 1 1 100%;
 }
+
+.kanban-column h1 {
+  border: solid 0.2rem aqua;
+  padding: 0.6rem;
+  font-size: large;
+  text-align: center;
+  background-color: aqua;
+}
+
+.kanban-column .items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  border: solid 0.2rem aqua;
+  background-color: #bfbfbf;
+  height: 100%;
+  padding: 0.4em;
+}
