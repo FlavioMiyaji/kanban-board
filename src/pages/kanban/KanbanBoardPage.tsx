@@ -60,8 +60,8 @@ const KanbanBoardPage: React.FC = (): JSX.Element => {
   return (
     <div className="kanban-board-container">
       <header>
-        <img className="logo" src={logo} alt=""/>
-        <div className="project">Project name HERE</div>
+        <img className="logo" src={logo} alt="logo"/>
+        <h1 className="project">Project name HERE</h1>
       </header>
       <TaskCreate handleAddTask={handleAddTask} />
       <KanbanBoard stages={stages} />

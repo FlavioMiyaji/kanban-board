@@ -8,7 +8,21 @@
   min-height: 24rem; */
 }
 
+.kanban-board-container header {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 0.8em;
+  padding: 0.6em;
+}
+
 .kanban-board-container .logo {
   width: 5rem;
   height: 5rem;
+  background-color: blueviolet;
+  border-radius: 50%;
+}
+
+.kanban-board-container .project {
+  font-size: x-large;
 }
