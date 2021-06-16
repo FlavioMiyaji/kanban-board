@@ -4,8 +4,9 @@
   justify-content: stretch;
   align-items: stretch;
   margin: auto;
-  /* max-width: 50rem;
-  min-height: 24rem; */
+  background-color: honeydew;
+  height: 100vh;
+  padding: 1rem;
 }
 
 .kanban-board-container header {

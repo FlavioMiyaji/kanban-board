@@ -17,14 +17,29 @@ interface IStage {
 
 interface ITask {
   summary: string;
+  assigned?: string;
+  type?: string;
 }
 
-const text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat qui distinctio culpa inventore. Vero ipsum quas nesciunt. Non, facilis ab.';
+const text = `Lorem ipsum dolor sit amet 
+consectetur adipisicing elit. Fugiat qui 
+distinctio culpa inventore. Vero ipsum 
+quas nesciunt. Non, facilis ab.`;
 
 const KanbanBoardPage: React.FC = (): JSX.Element => {
   const [stages, setStages] = useState<IStage[]>([{
     name: 'TODO',
-    tasks: [{ summary: text }, { summary: text }, { summary: text }]
+    tasks: [{
+      summary: text,
+      assigned: 'Flavio',
+      type: 'Development'
+    }, {
+      summary: text,
+    }, {
+      summary: text,
+      assigned: 'Flavio',
+      type: 'Planning'
+    }]
   }, {
     name: 'Analyzing',
     tasks: [{ summary: text }]
@@ -33,7 +48,7 @@ const KanbanBoardPage: React.FC = (): JSX.Element => {
     tasks: [{ summary: text }]
   }, {
     name: 'Developing',
-    tasks: []
+    tasks: [{ summary: text }, { summary: text }, { summary: text }, { summary: text }, { summary: text }]
   }, {
     name: 'Developed',
     tasks: []
@@ -60,8 +75,8 @@ const KanbanBoardPage: React.FC = (): JSX.Element => {
   return (
     <div className="kanban-board-container">
       <header>
-        <img className="logo" src={logo} alt="logo"/>
-        <h1 className="project">Project name HERE</h1>
+        <img className="logo" src={logo} alt="logo" />
+        <h1 className="project">Kanban board</h1>
       </header>
       <TaskCreate handleAddTask={handleAddTask} />
       <KanbanBoard stages={stages} />
