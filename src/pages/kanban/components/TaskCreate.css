@@ -3,6 +3,7 @@
   background-color: #dedede;
   border-radius: 0.2em;
   overflow: hidden;
+  margin: 0 0.6rem 0.6rem 0.6rem;
 }
 
 .task-create label {

@@ -6,7 +6,6 @@
   margin: auto;
   background-color: honeydew;
   height: 100vh;
-  padding: 1rem;
 }
 
 .kanban-board-container header {
@@ -15,7 +14,7 @@
   align-items: center;
   justify-content: baseline;
   gap: 0.8em;
-  padding: 0.6em;
+  margin: 0.6rem;
 }
 
 .kanban-board-container .logo {

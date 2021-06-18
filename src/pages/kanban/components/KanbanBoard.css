@@ -4,5 +4,5 @@
   gap: 0.4em;
   overflow: scroll;
   height: inherit;
-  margin: 0.6rem 0;
+  padding: 0 0.6rem 0.6rem 0.6rem;
 }
