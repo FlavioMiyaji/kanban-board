@@ -4,6 +4,7 @@
 }
 
 .kanban-column h1 {
+  white-space:nowrap;
   position: sticky;
   inset: 0 0 auto 0;
   z-index: 1;
@@ -13,6 +14,7 @@
   font-size: large;
   text-align: center;
   background-color: aqua;
+  border-radius: 0.4em 0.4em 0 0;
 }
 
 .kanban-column .items {

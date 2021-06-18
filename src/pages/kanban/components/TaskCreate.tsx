@@ -41,7 +41,7 @@ const TaskCreate: React.FC<ITaskCreateProps> = ({ handleAddTask }): JSX.Element 
 
   return (
     <Unform
-      className="task"
+      className="task-create"
       ref={formRef}
       onSubmit={handleSubmit}
     >

@@ -1,0 +1,23 @@
+.task-create {
+  padding: 0.8em;
+  background-color: #dedede;
+  border-radius: 0.2em;
+  overflow: hidden;
+}
+
+.task-create label {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.task-create p {
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
+.task-create .input-container {
+  flex: 1;
+}
