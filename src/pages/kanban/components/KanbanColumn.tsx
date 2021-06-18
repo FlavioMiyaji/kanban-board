@@ -6,6 +6,7 @@ import './KanbanColumn.css';
 interface IStage {
   name: string;
   tasks: ITask[];
+  color?: string;
 }
 
 interface ITask {
@@ -37,16 +38,21 @@ const Column: React.FC<IColumnProps> = (props): JSX.Element => {
     first,
     last,
   } = props;
-  const { name, tasks } = stage;
+  const { name, tasks, color = 'aqua' } = stage;
   const handleMoveFrom = ({ task, direction }: IMove) => {
     onMoveFrom({ stage, task, direction });
   }
   return (
-    <div className="kanban-column">
-      <h1>
+    <div className="kanban-column" >
+      <h1
+        style={{
+          backgroundColor: color,
+          borderColor: color,
+        }}
+      >
         {name}
       </h1>
-      <div className="items">
+      <div className="items" style={{ borderColor: color }}>
         {tasks.map(task => (
           <KanbanCard
             key={task.id}

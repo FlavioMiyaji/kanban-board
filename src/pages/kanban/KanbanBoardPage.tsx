@@ -26,6 +26,7 @@ interface IStage {
   id: string;
   name: string;
   tasks: ITask[];
+  color?: string;
 }
 
 interface IUser {
@@ -66,10 +67,12 @@ const initStages: IStage[] = [{
   id: uuid(),
   name: 'Analyzing',
   tasks: [{ id: uuid(), summary: text }],
+  color: 'cadetblue',
 }, {
   id: uuid(),
   name: 'Analyzed',
   tasks: [{ id: uuid(), summary: text }],
+  color: 'lightblue',
 }, {
   id: uuid(),
   name: 'Developing',
@@ -80,22 +83,27 @@ const initStages: IStage[] = [{
     { id: uuid(), summary: text },
     { id: uuid(), summary: text },
   ],
+  color: 'cornflowerblue',
 }, {
   id: uuid(),
   name: 'Developed',
   tasks: [],
+  color: 'darksalmon',
 }, {
   id: uuid(),
   name: 'Developed',
   tasks: [],
+  color: 'darkturquoise',
 }, {
   id: uuid(),
   name: 'Testing',
   tasks: [],
+  color: 'blueviolet',
 }, {
   id: uuid(),
   name: 'Done',
   tasks: [{ id: uuid(), summary: text }],
+  color: 'hotpink',
 }];
 
 const KanbanBoardPage: React.FC = (): JSX.Element => {

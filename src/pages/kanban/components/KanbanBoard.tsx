@@ -9,6 +9,7 @@ interface IStage {
   id: string;
   name: string;
   tasks: ITask[];
+  color?: string;
 }
 
 interface ITask {
