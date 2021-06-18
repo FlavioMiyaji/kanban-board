@@ -9,15 +9,38 @@ interface IStage {
 }
 
 interface ITask {
+  id: string;
   summary: string;
 }
 
-interface IKanbanColumnProps {
-  stage: IStage;
+enum EDirection {
+  forth = '>',
+  back = '<',
 }
 
-const KanbanColumn: React.FC<IKanbanColumnProps> = ({ stage }): JSX.Element => {
+interface IMove {
+  task: ITask;
+  direction: EDirection;
+}
+
+interface IColumnProps {
+  stage: IStage;
+  onMoveFrom: Function;
+  first: boolean;
+  last: boolean;
+}
+
+const Column: React.FC<IColumnProps> = (props): JSX.Element => {
+  const {
+    stage,
+    onMoveFrom,
+    first,
+    last,
+  } = props;
   const { name, tasks } = stage;
+  const handleMoveFrom = ({ task, direction }: IMove) => {
+    onMoveFrom({ stage, task, direction });
+  }
   return (
     <div className="kanban-column">
       <h1>
@@ -25,11 +48,17 @@ const KanbanColumn: React.FC<IKanbanColumnProps> = ({ stage }): JSX.Element => {
       </h1>
       <div className="items">
         {tasks.map(task => (
-          <KanbanCard task={task} />
+          <KanbanCard
+            key={task.id}
+            task={task}
+            onMove={handleMoveFrom}
+            first={first}
+            last={last}
+          />
         ))}
       </div>
     </div>
   );
 }
 
-export default KanbanColumn;
+export default Column;
