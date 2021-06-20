@@ -3,5 +3,5 @@ Creating a Kanban board with ReactJS
 
 # TODO
 - [ ] Figma wireframe
-- [ ] Jest automation 
-- [ ] 
+- [ ] Test automation 
+- [ ] Left and Right Mouse click
