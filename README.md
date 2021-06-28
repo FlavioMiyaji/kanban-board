@@ -5,3 +5,4 @@ Creating a Kanban board with ReactJS
 - [ ] Figma wireframe
 - [ ] Test automation 
 - [ ] Left and Right Mouse click
+- [ ] Review Styling
