@@ -6,3 +6,4 @@ Creating a Kanban board with ReactJS
 - [ ] Test automation 
 - [ ] Left and Right Mouse click
 - [ ] Review Styling
+- [ ] Add dark mode
