@@ -7,3 +7,4 @@ Creating a Kanban board with ReactJS
 - [ ] Left and Right Mouse click
 - [ ] Review Styling
 - [ ] Add dark mode
+- [ ] ...
