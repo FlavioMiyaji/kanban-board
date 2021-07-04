@@ -8,3 +8,4 @@ Creating a Kanban board with ReactJS
 - [ ] Review Styling
 - [ ] Add dark mode
 - [ ] ...
+- [ ] Build an autocomplete
