@@ -9,3 +9,4 @@ Creating a Kanban board with ReactJS
 - [ ] Add dark mode
 - [ ] ...
 - [ ] Build an autocomplete
+- [ ] Creating a new repository for tests
