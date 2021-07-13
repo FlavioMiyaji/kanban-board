@@ -11,3 +11,4 @@ Creating a Kanban board with ReactJS
 - [ ] Build an autocomplete
 - [ ] Create a new repository for tests
 - [ ] Hands on Code tests
+- [ ] Create a JAVA Challenge project
